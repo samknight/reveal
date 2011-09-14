@@ -34,9 +34,9 @@
 		
 		//Gather text from the trigger and insert into the target area
 		function triggerTransition(content) {	
-			$(options.target).fadeOut(100, function(){
+			$(options.target).animate({opacity: 0}, 100, function(){
 				$(options.target).html(content);
-				$(options.target).fadeIn(100);
+				$(options.target).animate({opacity: 1}, 100);
 			});
 		};
   };	
