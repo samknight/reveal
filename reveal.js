@@ -34,7 +34,7 @@
 		
 		//Gather text from the trigger and insert into the target area
 		function triggerTransition(content) {	
-			$(options.target).animate({opacity: 0}, 100, function(){
+			$(options.target).stop().animate({opacity: 0}, 100, function(){
 				$(options.target).html(content);
 				$(options.target).animate({opacity: 1}, 100);
 			});
